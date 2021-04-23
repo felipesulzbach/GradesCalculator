@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/grade1_ipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:hint="Grade 1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/grade2_ipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:hint="Grade 2"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/grade3_ipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grade1_ipt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:hint="Grade 3"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/grade4_ipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grade2_ipt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:hint="Grade 4"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/missed_classes_ipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grade3_ipt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:hint="Missed classes"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="20dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/missed_classes_ipt"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/dark_gray"
+        android:padding="20dp"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result_dsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate_btn"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
